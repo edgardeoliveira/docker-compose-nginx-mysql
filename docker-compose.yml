@@ -1,9 +1,11 @@
 services:
   nginx:
     image: nginx
+    container_name: Ed_Nginx
     ports:
       - "80:80"
   mysql:
     image: mysql
+    container_name: Ed_MySQL
     environment:
       - MYSQL_ROOT_PASSWORD=123456
